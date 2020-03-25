@@ -4,9 +4,9 @@ var tableData = data;
 function createTable(elements) {
     var tbody = d3.select("tbody");    
     tbody.html("");
-    elements.forEach((ufo_data) => {
+    elements.forEach((ufos) => {
         var row = tbody.append("tr");
-        Object.entries(ufo_data).forEach(([key, value]) => {
+        Object.entries(ufos).forEach(([key, value]) => {
             var cell = row.append("td");
             cell.text(value);
         });
